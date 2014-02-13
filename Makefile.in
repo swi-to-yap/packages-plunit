@@ -18,7 +18,7 @@ EXAMPLES=	read.pl simple.pl
 all:
 		@echo "Nothing to do for this package"
 
-install:	$(addprefix $(srcdir)/, $(LIBPL))
+install:	$(addprefix $(srcdir)/, $(LIBPL)) install-examples
 		mkdir -p $(DESTDIR)$(PLLIBDIR)
 		$(INSTALL_DATA) $(addprefix $(srcdir)/, $(LIBALL)) $(DESTDIR)$(PLLIBDIR)
 		$(MKINDEX)
