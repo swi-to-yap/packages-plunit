@@ -31,6 +31,16 @@
     Artistic License, version 2.0.
 */
 
+/** @pred  _Term1_ =@=  _Term2_ is semidet
+
+
+
+True iff  _Term1_ and  _Term2_ are structurally equivalent. I.e. if  _Term1_ and  _Term2_ are variants of each other.
+
+
+
+
+ */
 :- module(swi,
 	  [ (=@=)/2,			% @Term1, @Term2
 	    forall/2,			% :Cond, :Action
